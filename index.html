@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="header__nav">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="header__cont container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div class="w3-container">
+          <button onclick="document.getElementById('id01').style.display='block'"
+            class="w3-button w3-green w3-large">Add products</button>
+
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+              <div class="w3-center"><br>
+                <span onclick="document.getElementById('id01').style.display='none'"
+                  class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                <!-- <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top"> -->
+              </div>
+
+              <form class="w3-container" action="/action_page.php">
+                <div class="w3-section">
+                  <label><b>TITLE</b></label>
+                  <input class=" title w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter title" 
+                    name="usrname" required>
+                  <label><b>DESCRIPTION</b></label>
+                  <input class=" description w3-input w3-border" type="text" placeholder="Enter description" name="psw" required>
+                   <br>
+                  <label><b>PRICE</b></label>
+                  <input class="price w3-input w3-border" type="number" placeholder="Enter price" name="psw" required>
+                  <button class="button-1 w3-button w3-block w3-green w3-section w3-padding" type="submit">add product</button>
+                </div>
+              </form>
+
+              <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <button onclick="document.getElementById('id01').style.display='none'" type="button"
+                  class="w3-button w3-red">Cancel</button>
+                  <!-- <span class="w3-right w3-padding w3-hide-small"><a href="#"><button class="w3-button w3-red">add</button></a></span> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="header__button">
+          <a href="./users.html"><button class="w3-button w3-green w3-large">Users</button></a>     
+        </div>
+       </nav>
+    </header>
+    <main>
+      <section class="section1">
+        <div class="loader loader-b">
+          <div class="loadingio-spinner-eclipse-sbka3l4husr"><div class="ldio-7j3zyy1u6da">
+              <div></div>
+              </div></div>
+      </div>
+        <div class="section1__product">
+          <!-- 
+          <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div> 
+              </div> -->
+        </div>
+
+      </section>
+    </main>
+  </div>
+  <script src="./main.js/about.js"></script>
+</body>
+
+</html>

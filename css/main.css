@@ -1,0 +1,28 @@
+.container {
+  width: 1500px;
+}
+
+.header {
+  margin-top: -150px;
+  width: 1290px;
+  position: fixed;
+  z-index: 2;
+  background: white;
+  padding-bottom: 10px;
+}
+.header .header__button {
+  margin-left: 200px;
+  margin-top: -43px;
+}
+
+.section1 {
+  margin-top: 150px;
+}
+.section1 .section1__product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-left: 37px;
+}
+
+/*# sourceMappingURL=main.css.map */
