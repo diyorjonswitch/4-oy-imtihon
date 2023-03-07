@@ -15,13 +15,12 @@ function fetchProducts(url, callBack) {
             deletebtns = data
             console.log(data);
         }).then(() => callBack(deletebtns))
-        loader.classList.remove('loader-b')
 
     }
     
     function renderfetch(array) {
         // console.log(array);
-        loader.classList.add('loader-b')
+        // loader.classList.add('loader-b')
 
         array.forEach((value) => {
             let html = `
@@ -35,10 +34,10 @@ function fetchProducts(url, callBack) {
                          <a href="#" id="${value.id}" class="btni btn btn-primary">Update</a>
                          </div>
                          `
-                         loader.classList.remove('loader-b') 
                          Elproduct.insertAdjacentHTML("beforeend", html)
-        });
-    }
+                        });
+                        loader.classList.remove('loader-b') 
+                    }
     fetchProducts("https://api.escuelajs.co/api/v1/products", renderfetch)
     
     Elproduct.addEventListener("click", e => {
@@ -80,7 +79,7 @@ function fetchProducts(url, callBack) {
   }) 
   .then((res) => res.json())
   .then((date) => console.log(date))
-  window.location.reload()
+//   window.location.reload()
 })
 
 
